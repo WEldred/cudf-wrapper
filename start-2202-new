@@ -1,0 +1,11 @@
+#!/bin/bash
+#       -u $(id -u):$(id -g) \
+docker run \
+       --name=rapidstest \
+       --gpus all \
+       --rm -ti \
+       -p 8888:8888 -p 8787:8787 -p 8786:8786 \
+       -v $HOME:$HOME \
+       --shm-size=1g \
+       --ulimit memlock=-1 \
+       weldred-re3:22.08-new

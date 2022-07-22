@@ -1,0 +1,4 @@
+#!/bin/bash
+source activate shareable_dataframes
+python /rapids/python/python_kernel_wrapper.py /rapids/data/testfile-short.csv.gz
+

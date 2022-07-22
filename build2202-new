@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker build -t weldred-re3:22.08-new . -f Dockerfile2202
+
